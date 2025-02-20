@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A. Cassius Laffin</title>
     <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
 </head>
 <body>
     <header class="site-header">
@@ -13,7 +14,10 @@
             <h2 class="rod">Read Of The Day:</h2>
             <h3 class="read">East of Eden by John Steinbeck</h3>
         </div>
-        <img class="headshot" src="resources/laffin_in_suit.jpeg" align="right">
+        <img class="headshot" src="/resources/laffin_in_suit.jpeg">
+
+    </header>
+    <div class="navigation">
         <nav class="navbar">
             <div class="navbar__container">
                 <ul class="navbar__menu">
@@ -22,15 +26,37 @@
                     <li class="navbar__item"><a href="poems.html" target="_blank" class="navbar__links">Original Poetry</a></li>
                 </ul>
             </div>
+            <div class="menubutton">
+                <ul>
+                    <li onclick=showMenubar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                </ul>
+            </div>
+
+            <div class="menubar">
+                <ul>
+                    <li class="xbutton" onclick=hideMenubar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                    <li class="menubar__item"><a href="index.html"  class="menubar__links">Home</a></li>
+                    <li class="menubar__item"><a href="lit_reviews.html" target="_blank" class="menubar__links">Literary Reviews</a></li>
+                    <li class="menubar__item"><a href="poems.html" target="_blank" class="menubar__links">Original Poetry</a></li>
+                </ul>
+            </div>
         </nav>
-    </header>
-    <div class="what">
+    </div>
+
+    <div class="what" id="what">
         <h2>What is this?</h2>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis sapiente eos enim animi non, error voluptate soluta dolores sequi ipsum aperiam. Temporibus repudiandae alias, ex animi quidem dolorem architecto dolor?</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis sapiente eos enim animi non, error voluptate soluta dolores sequi ipsum aperiam. Temporibus repudiandae alias, ex animi quidem dolorem architecto dolor? Lorem ipsum odor amet, consectetuer adipiscing elit. Cras tortor faucibus dis; justo rhoncus aenean natoque nascetur. Tempor magna adipiscing bibendum erat hac. Commodo ultricies lobortis ridiculus a velit nulla efficitur erat. Faucibus aenean elit ac rutrum curae turpis. Per tempor ex non maximus scelerisque enim. Natoque consequat efficitur auctor magnis, nam facilisis. Vulputate himenaeos lectus faucibus scelerisque etiam faucibus pellentesque lacinia. Tempor porta posuere eros nullam a consectetur.
+            Est ridiculus penatibus nisi nunc nullam phasellus. Mattis tincidunt sapien vestibulum ultricies adipiscing litora. Penatibus ultrices donec ultricies vulputate in at elit nullam class. Tristique cras morbi arcu elit integer. Euismod litora imperdiet magna nulla potenti mauris ipsum montes venenatis. Lacus nisl natoque sed integer magna libero ut proin montes. Pellentesque phasellus velit tortor efficitur ad dis. Euismod cursus iaculis euismod curabitur mattis. Volutpat curae sem ultricies sodales viverra mattis magnis? Lorem ipsum odor amet, consectetuer adipiscing elit. Cras tortor faucibus dis; justo rhoncus aenean natoque nascetur. Tempor magna adipiscing bibendum erat hac. Commodo ultricies lobortis ridiculus a velit nulla efficitur erat. Faucibus aenean elit ac rutrum curae turpis. Per tempor ex non maximus scelerisque enim. Natoque consequat efficitur auctor magnis, nam facilisis. Vulputate himenaeos lectus faucibus scelerisque etiam faucibus pellentesque lacinia. Tempor porta posuere eros nullam a consectetur.
+            Est ridiculus penatibus nisi nunc nullam phasellus. Mattis tincidunt sapien vestibulum ultricies adipiscing litora. Penatibus ultrices donec ultricies vulputate in at elit nullam class. Tristique cras morbi arcu elit integer. Euismod litora imperdiet magna nulla potenti mauris ipsum montes venenatis. Lacus nisl natoque sed integer magna libero ut proin montes. Pellentesque phasellus velit tortor efficitur ad dis. Euismod cursus iaculis euismod curabitur mattis. Volutpat curae sem ultricies sodales viverra mattis magnis?</p>
     </div>
     <div class="who">
         <h2>Who is A. Cassius Laffin?</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta nam at itaque, corrupti neque repudiandae enim provident sunt illo cupiditate quasi aperiam, ullam, ea quae quia commodi tempore sapiente culpa.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta nam at itaque, corrupti neque repudiandae enim provident sunt illo cupiditate quasi aperiam, ullam, ea quae quia commodi tempore sapiente culpa. Lorem ipsum odor amet, consectetuer adipiscing elit. Cras tortor faucibus dis; justo rhoncus aenean natoque nascetur. Tempor magna adipiscing bibendum erat hac. Commodo ultricies lobortis ridiculus a velit nulla efficitur erat. Faucibus aenean elit ac rutrum curae turpis. Per tempor ex non maximus scelerisque enim. Natoque consequat efficitur auctor magnis, nam facilisis. Vulputate himenaeos lectus faucibus scelerisque etiam faucibus pellentesque lacinia. Tempor porta posuere eros nullam a consectetur.
+            Est ridiculus penatibus nisi nunc nullam phasellus. Mattis tincidunt sapien vestibulum ultricies adipiscing litora. Penatibus ultrices donec ultricies vulputate in at elit nullam class. Tristique cras morbi arcu elit integer. Euismod litora imperdiet magna nulla potenti mauris ipsum montes venenatis. Lacus nisl natoque sed integer magna libero ut proin montes. Pellentesque phasellus velit tortor efficitur ad dis. Euismod cursus iaculis euismod curabitur mattis. Volutpat curae sem ultricies sodales viverra mattis magnis? Lorem ipsum odor amet, consectetuer adipiscing elit. Cras tortor faucibus dis; justo rhoncus aenean natoque nascetur. Tempor magna adipiscing bibendum erat hac. Commodo ultricies lobortis ridiculus a velit nulla efficitur erat. Faucibus aenean elit ac rutrum curae turpis. Per tempor ex non maximus scelerisque enim. Natoque consequat efficitur auctor magnis, nam facilisis. Vulputate himenaeos lectus faucibus scelerisque etiam faucibus pellentesque lacinia. Tempor porta posuere eros nullam a consectetur.
+            Est ridiculus penatibus nisi nunc nullam phasellus. Mattis tincidunt sapien vestibulum ultricies adipiscing litora. Penatibus ultrices donec ultricies vulputate in at elit nullam class. Tristique cras morbi arcu elit integer. Euismod litora imperdiet magna nulla potenti mauris ipsum montes venenatis. Lacus nisl natoque sed integer magna libero ut proin montes. Pellentesque phasellus velit tortor efficitur ad dis. Euismod cursus iaculis euismod curabitur mattis. Volutpat curae sem ultricies sodales viverra mattis magnis? Lorem ipsum odor amet, consectetuer adipiscing elit. Cras tortor faucibus dis; justo rhoncus aenean natoque nascetur. Tempor magna adipiscing bibendum erat hac. Commodo ultricies lobortis ridiculus a velit nulla efficitur erat. Faucibus aenean elit ac rutrum curae turpis. Per tempor ex non maximus scelerisque enim. Natoque consequat efficitur auctor magnis, nam facilisis. Vulputate himenaeos lectus faucibus scelerisque etiam faucibus pellentesque lacinia. Tempor porta posuere eros nullam a consectetur.
+            Est ridiculus penatibus nisi nunc nullam phasellus. Mattis tincidunt sapien vestibulum ultricies adipiscing litora. Penatibus ultrices donec ultricies vulputate in at elit nullam class. Tristique cras morbi arcu elit integer. Euismod litora imperdiet magna nulla potenti mauris ipsum montes venenatis. Lacus nisl natoque sed integer magna libero ut proin montes. Pellentesque phasellus velit tortor efficitur ad dis. Euismod cursus iaculis euismod curabitur mattis. Volutpat curae sem ultricies sodales viverra mattis magnis? Lorem ipsum odor amet, consectetuer adipiscing elit. Cras tortor faucibus dis; justo rhoncus aenean natoque nascetur. Tempor magna adipiscing bibendum erat hac. Commodo ultricies lobortis ridiculus a velit nulla efficitur erat. Faucibus aenean elit ac rutrum curae turpis. Per tempor ex non maximus scelerisque enim. Natoque consequat efficitur auctor magnis, nam facilisis. Vulputate himenaeos lectus faucibus scelerisque etiam faucibus pellentesque lacinia. Tempor porta posuere eros nullam a consectetur.
+            Est ridiculus penatibus nisi nunc nullam phasellus. Mattis tincidunt sapien vestibulum ultricies adipiscing litora. Penatibus ultrices donec ultricies vulputate in at elit nullam class. Tristique cras morbi arcu elit integer. Euismod litora imperdiet magna nulla potenti mauris ipsum montes venenatis. Lacus nisl natoque sed integer magna libero ut proin montes. Pellentesque phasellus velit tortor efficitur ad dis. Euismod cursus iaculis euismod curabitur mattis. Volutpat curae sem ultricies sodales viverra mattis magnis? Lorem ipsum odor amet, consectetuer adipiscing elit. Cras tortor faucibus dis; justo rhoncus aenean natoque nascetur. Tempor magna adipiscing bibendum erat hac. Commodo ultricies lobortis ridiculus a velit nulla efficitur erat. Faucibus aenean elit ac rutrum curae turpis. Per tempor ex non maximus scelerisque enim. Natoque consequat efficitur auctor magnis, nam facilisis. Vulputate himenaeos lectus faucibus scelerisque etiam faucibus pellentesque lacinia. Tempor porta posuere eros nullam a consectetur.
+            Est ridiculus penatibus nisi nunc nullam phasellus. Mattis tincidunt sapien vestibulum ultricies adipiscing litora. Penatibus ultrices donec ultricies vulputate in at elit nullam class. Tristique cras morbi arcu elit integer. Euismod litora imperdiet magna nulla potenti mauris ipsum montes venenatis. Lacus nisl natoque sed integer magna libero ut proin montes. Pellentesque phasellus velit tortor efficitur ad dis. Euismod cursus iaculis euismod curabitur mattis. Volutpat curae sem ultricies sodales viverra mattis magnis?</p>
     </div>
 
     <footer>
