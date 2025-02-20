@@ -9,7 +9,7 @@ function hideMenubar() {
 }
 
 function stickyNav() {
-    var headerHeight = document.querySelector('#what').offsetHeight / 2;
+    var headerHeight = document.querySelector('#what').offsetHeight;
     var navbar = document.querySelector('nav');
     var scrollValue = window.scrollY;
 
